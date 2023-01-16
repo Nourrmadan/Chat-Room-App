@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroomapp.Client">
+   <children>
+      <Button fx:id="Send" layoutX="484.0" layoutY="344.0" mnemonicParsing="false" onAction="#handle" prefHeight="28.0" prefWidth="102.0" text="Send">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Msg" layoutX="14.0" layoutY="328.0" prefHeight="59.0" prefWidth="459.0" />
+      <TextArea fx:id="All" layoutX="18.0" layoutY="50.0" prefHeight="241.0" prefWidth="451.0" />
+      <Label layoutX="88.0" layoutY="14.0" text="Welcome to the chatting room!!">
+         <font>
+            <Font name="Arial Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="SaveChat" layoutX="484.0" layoutY="303.0" mnemonicParsing="false" onAction="#SaveClick" prefHeight="25.0" prefWidth="102.0" text="Save Chat">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Logout" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="27.0" prefWidth="75.0" text="Logout">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="Busy" layoutX="473.0" layoutY="88.0" mnemonicParsing="false" onAction="#BusyClick" text="BUSY" />
+      <RadioButton fx:id="ONLINE" layoutX="473.0" layoutY="117.0" mnemonicParsing="false" onAction="#onlineClick" text="ONLINE" />
+      <Circle fill="#ff1f1f" layoutX="552.0" layoutY="98.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#74ff1f" layoutX="552.0" layoutY="126.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
